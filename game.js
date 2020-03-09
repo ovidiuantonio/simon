@@ -76,3 +76,11 @@ $(document).keypress(function () {
     }
 })
 
+$("h1").click(function () {
+    if(firstTime == 1) {
+        firstTime = 0;
+        $("#level-title").text("Level 0");
+        nextSequence();
+    }
+})
+
